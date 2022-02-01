@@ -1,0 +1,17 @@
+[lib]
+proc-macro = true
+
+[package]
+name = "mt4_server_api_macros"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+quote = "1.0.14"
+syn = {version = "1.0.85", features = ["full", "visit"]}
+proc-macro2 = "1.0.36"
+
+[build-dependencies]
+bindgen = "0.59.2"
